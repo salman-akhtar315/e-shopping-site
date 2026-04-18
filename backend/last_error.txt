@@ -1,0 +1,9 @@
+Error: Your account has been deactivated. Contact support.
+    at file:///D:/JS/EcomeProject/backend/src/controllers/user.controller.js:99:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+{
+  "statusCode": 403,
+  "data": null,
+  "success": false,
+  "errors": []
+}
