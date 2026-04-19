@@ -44,8 +44,12 @@ const Home = () => {
             <section className="bg-indigo-700 text-white rounded-2xl p-8 text-center md:text-left shadow-lg flex flex-col items-center md:flex-row md:justify-between">
                 <div className="max-w-xl">
                     <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Welcome to E-Shop</h1>
-                    <p className="text-lg text-indigo-100 mb-6">Discover amazing products at unbeatable prices. Shop the latest trends today!</p>
+                    <p className="text-lg text-indigo-100 mb-6">Discover amazing products at unbeatable prices, featuring the latest trends and everyday essentials.
+                        Shop now for quality, style, and great deals all in one place!</p>
                 </div>
+
+                {/* Discover amazing products at unbeatable prices. Shop the latest trends today! */}
+
                 <div className="hidden md:block">
                     {/* Placeholder for a nice hero graphic */}
                     <svg className="w-48 h-48 opacity-80" fill="currentColor" viewBox="0 0 20 20"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
@@ -59,8 +63,8 @@ const Home = () => {
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                     {categories.map((category) => (
-                        <Link 
-                            key={category._id} 
+                        <Link
+                            key={category._id}
                             to={`/category/${category._id}`}
                             className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 text-center hover:shadow-md hover:border-indigo-300 transition group"
                         >
